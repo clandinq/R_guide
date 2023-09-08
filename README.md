@@ -59,14 +59,19 @@ For coding style practices, follow the [tidyverse style guide](https://style.tid
 Generally, within a project folder, we have a subfolder called `analysis` where we are doing data analysis (and other sub-folders like `paper` where the paper draft is saved). Within the `analysis` subfolder, we have:
 - An .Rproj file for the project. (This can be created in RStudio, with File > New Project.)
   - Note that if you always open the Project within RStudio before working (see "Project" in the upper right-hand corner of RStudio) then the `here` package will work for relative filepaths.
-- data - only raw data go in this folder
-- documentation - documentation about the data goes in this folder
-- proc - processed data sets go in this folder
-- results - results go in this folder
-  - figures - subfolder for figures
-  - tables - subfolder for tables
-- scripts - code goes in this folder
-  - programs - a subfolder containing functions called by the analysis scripts (if applicable)
+- **admin**: This folder should contain administrative files, for example agreements, contracts, and grant proposals.
+- **data**: Only raw data go in this folder.
+- **documentation**: Documentation about the data goes in this folder.
+- **logs**: Only create this folder when generating logs from running scripts on the server.
+- **paper**: Paper tex and pdf documents.
+- **pictures**: Any pictures to be included in the paper or presentation.
+- **presentations**: Presentation tex and pdf documents.
+- **proc**: Processed data sets go in this folder.
+- **results**: Results go in this folder.
+   - **figures**: Subfolder for figures.
+   - **tables**: Subfolder for tables.
+- **scripts**: Code goes in this folder.
+   - **programs**: A subfolder containing functions called by the analysis scripts (if applicable).
 
 ## Scripts structure
 
